@@ -1,0 +1,1268 @@
+/* ===========================================
+AKSHARA DEGREE COLLEGE
+STYLE.CSS
+PART 1A
+=========================================== */
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================================
+RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7f9fc;
+    color:#333;
+    line-height:1.7;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================================
+COLORS
+=========================================== */
+
+:root{
+
+    --primary:#0B3D91;
+
+    --secondary:#FF8C00;
+
+    --white:#ffffff;
+
+    --light:#f4f6fa;
+
+    --dark:#222;
+
+    --gray:#777;
+
+    --shadow:0 10px 30px rgba(0,0,0,.1);
+
+    --radius:12px;
+
+}
+
+/* ===========================================
+TOP BAR
+=========================================== */
+
+.top-bar{
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 7%;
+
+    font-size:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.top-left span{
+
+    margin-right:20px;
+
+}
+
+.top-left i{
+
+    color:orange;
+
+    margin-right:6px;
+
+}
+
+.top-right a{
+
+    color:white;
+
+    margin-left:15px;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.top-right a:hover{
+
+    color:orange;
+
+}
+
+/* ===========================================
+HEADER
+=========================================== */
+
+header{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 7%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:70px;
+
+    margin-right:15px;
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+    font-size:25px;
+
+}
+
+.logo p{
+
+    color:gray;
+
+    font-size:14px;
+
+}
+
+/* ===========================================
+NAVIGATION
+=========================================== */
+
+nav ul{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav ul li a{
+
+    color:#222;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:3px;
+
+    left:0;
+
+    bottom:-6px;
+
+    background:orange;
+
+    transition:.4s;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================================
+HERO
+=========================================== */
+
+.hero{
+
+    height:90vh;
+
+    background:url("images/college.jpg") center center/cover;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.60);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.overlay h4{
+
+    letter-spacing:5px;
+
+    color:orange;
+
+    margin-bottom:10px;
+
+}
+
+.overlay h1{
+
+    font-size:65px;
+
+    margin-bottom:15px;
+
+}
+
+.overlay h3{
+
+    font-size:35px;
+
+    color:#FFD54F;
+
+    margin-bottom:20px;
+
+}
+
+.overlay p{
+
+    width:70%;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================================
+BUTTONS
+=========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    background:orange;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:white;
+
+    color:#0B3D91;
+
+    transform:translateY(-4px);
+
+}
+
+.btn2{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.btn2:hover{
+
+    background:white;
+
+    color:#0B3D91;
+
+}
+
+/* ===========================================
+COMMON SECTION TITLE
+=========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    padding:70px 20px 40px;
+
+}
+
+.section-title h5{
+
+    color:orange;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.section-title h2{
+
+    color:var(--primary);
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    width:70%;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+/* ===========================================
+SMALL ANIMATIONS
+=========================================== */
+
+.box,
+.course-card,
+.lab-card,
+.facility-card,
+.why-card,
+.testimonial-card{
+
+    transition:.4s;
+
+}
+
+.box:hover,
+.course-card:hover,
+.lab-card:hover,
+.facility-card:hover,
+.why-card:hover,
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+/*==========================================
+ABOUT SECTION
+==========================================*/
+
+.about{
+    padding:100px 0;
+    background:#fff;
+}
+
+.about .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h5{
+    color:orange;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.about-content h2{
+    font-size:42px;
+    color:#0B3D91;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:#666;
+    margin-bottom:25px;
+    text-align:justify;
+    line-height:1.8;
+}
+
+.about-boxes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:25px;
+}
+
+.box{
+    background:#fff;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.box i{
+    font-size:45px;
+    color:orange;
+    margin-bottom:15px;
+}
+
+.box h4{
+    color:#0B3D91;
+    margin-bottom:10px;
+}
+
+/*==========================================
+MISSION & VISION
+==========================================*/
+
+.vision{
+    padding:90px 0;
+    background:#f4f7fb;
+}
+
+.vision .container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.vision-card{
+    background:#fff;
+    padding:45px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.vision-card:hover{
+    transform:translateY(-8px);
+}
+
+.vision-card i{
+    font-size:60px;
+    color:orange;
+    margin-bottom:20px;
+}
+
+.vision-card h2{
+    color:#0B3D91;
+    margin-bottom:20px;
+}
+
+.vision-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/*==========================================
+WHY CHOOSE US
+==========================================*/
+
+.why-us{
+    padding:100px 0;
+    background:#fff;
+}
+
+.why-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.why-card i{
+    font-size:55px;
+    color:orange;
+    margin-bottom:20px;
+}
+
+.why-card h3{
+    color:#0B3D91;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#666;
+}
+
+/*==========================================
+COURSES
+==========================================*/
+
+.courses{
+    padding:100px 0;
+    background:#f5f8fc;
+}
+
+.course-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+}
+
+.course-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.course-card i{
+    font-size:55px;
+    color:orange;
+    margin-bottom:20px;
+}
+
+.course-card h3{
+    color:#0B3D91;
+    margin-bottom:15px;
+}
+
+.course-card p{
+    color:#666;
+}
+
+/*==========================================
+STATISTICS
+==========================================*/
+
+.stats{
+    background:#0B3D91;
+    color:white;
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    text-align:center;
+}
+
+.stat-box{
+    padding:20px;
+}
+
+.stat-box h2{
+    font-size:55px;
+    color:#FFD54F;
+}
+
+.stat-box p{
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+/*==========================================
+ADMISSION SECTION
+==========================================*/
+
+.admission{
+    padding:100px 0;
+    background:linear-gradient(rgba(11,61,145,.85),
+    rgba(11,61,145,.85)),
+    url("images/college.jpg") center/cover;
+    color:white;
+    text-align:center;
+}
+
+.admission-content{
+    width:80%;
+    max-width:900px;
+    margin:auto;
+}
+
+.admission h4{
+    color:#FFD54F;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.admission h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.admission p{
+    font-size:18px;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.admission .btn{
+    display:inline-block;
+}
+/*==========================================
+LABORATORIES
+==========================================*/
+
+.labs{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.lab-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.lab-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+    transition:.4s;
+}
+
+.lab-card:hover{
+    transform:translateY(-10px);
+}
+
+.lab-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.lab-card:hover img{
+    transform:scale(1.08);
+}
+
+.lab-content{
+    padding:25px;
+}
+
+.lab-content h3{
+    color:#0B3D91;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.lab-content p{
+    color:#666;
+    line-height:1.8;
+}
+
+/*==========================================
+FACILITIES
+==========================================*/
+
+.facilities{
+    padding:100px 0;
+    background:#f5f8fc;
+}
+
+.facility-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.facility-card{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.facility-card:hover{
+    transform:translateY(-10px);
+}
+
+.facility-card i{
+    font-size:55px;
+    color:orange;
+    margin-bottom:20px;
+}
+
+.facility-card h3{
+    color:#0B3D91;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.facility-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/*==========================================
+PRINCIPAL
+==========================================*/
+
+.principal{
+    padding:100px 0;
+    background:white;
+}
+
+.principal-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.principal-image{
+    flex:1;
+    text-align:center;
+}
+
+.principal-image img{
+    width:100%;
+    max-width:400px;
+    border-radius:20px;
+    border:8px solid white;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.principal-content{
+    flex:1;
+}
+
+.principal-content h5{
+    color:orange;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.principal-content h2{
+    color:#0B3D91;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.principal-content p{
+    color:#555;
+    text-align:justify;
+    margin-bottom:18px;
+    line-height:1.9;
+}
+
+.principal-content h3{
+    margin-top:30px;
+    color:#0B3D91;
+    font-size:24px;
+}
+
+/*==========================================
+SECTION SPACING
+==========================================*/
+
+.about,
+.vision,
+.why-us,
+.courses,
+.labs,
+.facilities,
+.principal,
+.gallery,
+.testimonials,
+.contact{
+    scroll-margin-top:100px;
+}
+/*==========================================
+GALLERY
+==========================================*/
+
+.gallery{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.gallery-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    cursor:pointer;
+}
+
+.gallery-item img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.12);
+}
+
+/*==========================================
+TESTIMONIALS
+==========================================*/
+
+.testimonials{
+    padding:100px 0;
+    background:#f5f8fc;
+}
+
+.testimonial-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.testimonial-card p{
+    color:#555;
+    line-height:1.8;
+    font-style:italic;
+}
+
+.testimonial-card h3{
+    color:#FFD700;
+    margin:20px 0;
+    font-size:28px;
+}
+
+.testimonial-card h4{
+    color:#0B3D91;
+}
+
+/*==========================================
+CONTACT
+==========================================*/
+
+.contact{
+    padding:100px 0;
+    background:white;
+}
+
+.contact-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.contact-info{
+    flex:1;
+}
+
+.contact-info h3{
+    font-size:35px;
+    color:#0B3D91;
+    margin-bottom:25px;
+}
+
+.contact-info p{
+    margin-bottom:20px;
+    color:#555;
+    font-size:17px;
+}
+
+.contact-info i{
+    color:orange;
+    width:30px;
+}
+
+.contact-map{
+    flex:1;
+}
+
+.contact-map iframe{
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+/*==========================================
+FOOTER
+==========================================*/
+
+footer{
+    background:#0B3D91;
+    color:white;
+    padding:70px 0 20px;
+}
+
+.footer-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    margin-bottom:20px;
+}
+
+.footer-box p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.footer-box ul li{
+    margin-bottom:12px;
+}
+
+.footer-box ul li a{
+    color:#ddd;
+    transition:.3s;
+}
+
+.footer-box ul li a:hover{
+    color:#FFD54F;
+    padding-left:6px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    background:white;
+    color:#0B3D91;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    transition:.4s;
+}
+
+.social-icons a:hover{
+    background:orange;
+    color:white;
+    transform:translateY(-5px);
+}
+
+footer hr{
+    width:90%;
+    margin:50px auto 20px;
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.2);
+}
+
+.copyright{
+    text-align:center;
+    color:#ddd;
+}
+
+/*==========================================
+RESPONSIVE DESIGN
+==========================================*/
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+    gap:15px;
+}
+
+.overlay h1{
+    font-size:48px;
+}
+
+.overlay h3{
+    font-size:28px;
+}
+
+.overlay p{
+    width:90%;
+}
+
+.about .container,
+.principal-container,
+.contact-container{
+    flex-direction:column;
+}
+
+.about-boxes{
+    grid-template-columns:1fr;
+}
+
+.vision .container{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.top-bar{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+}
+
+.logo{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo img{
+    margin-bottom:10px;
+}
+
+.overlay h1{
+    font-size:38px;
+}
+
+.overlay h3{
+    font-size:22px;
+}
+
+.overlay p{
+    font-size:16px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn,
+.btn2{
+    width:220px;
+    text-align:center;
+}
+
+.section-title h2{
+    font-size:32px;
+}
+
+.about-content h2,
+.principal-content h2{
+    font-size:34px;
+}
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.course-container,
+.why-container,
+.lab-container,
+.facility-container,
+.gallery-container,
+.testimonial-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:480px){
+
+.overlay h1{
+    font-size:30px;
+}
+
+.overlay h3{
+    font-size:18px;
+}
+
+.overlay h4{
+    font-size:14px;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+.about-content h2,
+.principal-content h2{
+    font-size:28px;
+}
+
+.btn,
+.btn2{
+    width:100%;
+}
+
+.contact-info h3{
+    font-size:28px;
+}
+
+.footer-container{
+    text-align:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+}
+
+/*==========================================
+END OF CSS
+==========================================*/
