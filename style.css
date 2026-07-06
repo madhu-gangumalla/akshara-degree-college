@@ -1,17 +1,4 @@
-/* ===========================================
-AKSHARA DEGREE COLLEGE
-STYLE.CSS
-PART 1A
-=========================================== */
-
-/* Google Font */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-/* ===========================================
-RESET
-=========================================== */
-
 *{
     margin:0;
     padding:0;
@@ -44,11 +31,6 @@ ul{
     max-width:1200px;
     margin:auto;
 }
-
-/* ===========================================
-COLORS
-=========================================== */
-
 :root{
 
     --primary:#0B3D91;
@@ -68,11 +50,6 @@ COLORS
     --radius:12px;
 
 }
-
-/* ===========================================
-TOP BAR
-=========================================== */
-
 .top-bar{
 
     background:var(--primary);
@@ -124,11 +101,6 @@ TOP BAR
     color:orange;
 
 }
-
-/* ===========================================
-HEADER
-=========================================== */
-
 header{
 
     background:white;
@@ -182,11 +154,6 @@ header{
     font-size:14px;
 
 }
-
-/* ===========================================
-NAVIGATION
-=========================================== */
-
 nav ul{
 
     display:flex;
@@ -232,17 +199,11 @@ nav ul li a:hover{
     color:var(--primary);
 
 }
-
 nav ul li a:hover::after{
 
     width:100%;
 
 }
-
-/* ===========================================
-HERO
-=========================================== */
-
 .hero{
 
     height:90vh;
@@ -314,11 +275,6 @@ HERO
     margin-bottom:35px;
 
 }
-
-/* ===========================================
-BUTTONS
-=========================================== */
-
 .hero-buttons{
 
     display:flex;
@@ -378,11 +334,6 @@ BUTTONS
     color:#0B3D91;
 
 }
-
-/* ===========================================
-COMMON SECTION TITLE
-=========================================== */
-
 .section-title{
 
     text-align:center;
@@ -424,11 +375,6 @@ COMMON SECTION TITLE
     font-size:17px;
 
 }
-
-/* ===========================================
-SMALL ANIMATIONS
-=========================================== */
-
 .box,
 .course-card,
 .lab-card,
@@ -452,10 +398,6 @@ SMALL ANIMATIONS
     box-shadow:var(--shadow);
 
 }
-/*==========================================
-ABOUT SECTION
-==========================================*/
-
 .about{
     padding:100px 0;
     background:#fff;
@@ -527,11 +469,6 @@ ABOUT SECTION
     color:#0B3D91;
     margin-bottom:10px;
 }
-
-/*==========================================
-MISSION & VISION
-==========================================*/
-
 .vision{
     padding:90px 0;
     background:#f4f7fb;
@@ -571,11 +508,6 @@ MISSION & VISION
     color:#666;
     line-height:1.8;
 }
-
-/*==========================================
-WHY CHOOSE US
-==========================================*/
-
 .why-us{
     padding:100px 0;
     background:#fff;
@@ -612,11 +544,6 @@ WHY CHOOSE US
 .why-card p{
     color:#666;
 }
-
-/*==========================================
-COURSES
-==========================================*/
-
 .courses{
     padding:100px 0;
     background:#f5f8fc;
@@ -653,11 +580,6 @@ COURSES
 .course-card p{
     color:#666;
 }
-
-/*==========================================
-STATISTICS
-==========================================*/
-
 .stats{
     background:#0B3D91;
     color:white;
@@ -681,11 +603,6 @@ STATISTICS
     font-size:18px;
     letter-spacing:1px;
 }
-
-/*==========================================
-ADMISSION SECTION
-==========================================*/
-
 .admission{
     padding:100px 0;
     background:linear-gradient(rgba(11,61,145,.85),
@@ -721,10 +638,6 @@ ADMISSION SECTION
 .admission .btn{
     display:inline-block;
 }
-/*==========================================
-LABORATORIES
-==========================================*/
-
 .labs{
     padding:100px 0;
     background:#ffffff;
@@ -776,11 +689,6 @@ LABORATORIES
     color:#666;
     line-height:1.8;
 }
-
-/*==========================================
-FACILITIES
-==========================================*/
-
 .facilities{
     padding:100px 0;
     background:#f5f8fc;
@@ -824,11 +732,6 @@ FACILITIES
     color:#666;
     line-height:1.8;
 }
-
-/*==========================================
-PRINCIPAL
-==========================================*/
-
 .principal{
     padding:100px 0;
     background:white;
@@ -887,10 +790,6 @@ PRINCIPAL
     font-size:24px;
 }
 
-/*==========================================
-SECTION SPACING
-==========================================*/
-
 .about,
 .vision,
 .why-us,
@@ -903,10 +802,6 @@ SECTION SPACING
 .contact{
     scroll-margin-top:100px;
 }
-/*==========================================
-GALLERY
-==========================================*/
-
 .gallery{
     padding:100px 0;
     background:#ffffff;
@@ -938,10 +833,6 @@ GALLERY
 .gallery-item:hover img{
     transform:scale(1.12);
 }
-
-/*==========================================
-TESTIMONIALS
-==========================================*/
 
 .testimonials{
     padding:100px 0;
@@ -980,10 +871,6 @@ TESTIMONIALS
 .testimonial-card h4{
     color:#0B3D91;
 }
-
-/*==========================================
-CONTACT
-==========================================*/
 
 .contact{
     padding:100px 0;
@@ -1028,10 +915,6 @@ CONTACT
     border-radius:15px;
     box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
-
-/*==========================================
-FOOTER
-==========================================*/
 
 footer{
     background:#0B3D91;
@@ -1107,11 +990,6 @@ footer hr{
     text-align:center;
     color:#ddd;
 }
-
-/*==========================================
-RESPONSIVE DESIGN
-==========================================*/
-
 @media(max-width:992px){
 
 header{
@@ -1262,7 +1140,3 @@ nav ul{
 }
 
 }
-
-/*==========================================
-END OF CSS
-==========================================*/
